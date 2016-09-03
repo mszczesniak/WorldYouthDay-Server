@@ -1,10 +1,3 @@
-Zmienne środowiskowe potrzebne do konfiguracji:
+#DwD Kielce
 
-JWT_TOKEN_SECRET - hasło do tokenów JWT
-JDBC_DATABASE_NAME - nazwa bazy danych
-JDBC_DATABASE_USERNAME - uzytkownik bazy danych
-JDBC_DATABASE_PASSWORD - hasło do bazy danych
-SMTP_USER - login do konta pocztowego z ktorego beda wysylane emaile
-SMTP_PASSWORD - hasło do konta pocztowego z ktorego beda wysylane emaile
-SERVER_PORT - port serwera
-LOG_PATH - bezwzględna ścieżka do logów z serwera
+Projekt serwera dla aplikacji wspierającej organizację "Dni w Diecezjach". Wydarzenia te poprzedzały Światowe Dni Młodzieży 2016 w Krakowie.  Projekt miał na celu ułatwić komunikację pomiędzy organizatorami, a uczestnikami Dni w Diecezjach, na terenie całej Diecezji Kieleckiej.
