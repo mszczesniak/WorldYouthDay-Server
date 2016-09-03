@@ -1,0 +1,40 @@
+security:
+    token:
+        secret: ${JWT_TOKEN_SECRET}
+        expiration: 604800
+
+spring:
+    jackson:
+        serialization :
+            INDENT_OUTPUT : true
+            WRITE_DATES_AS_TIMESTAMPS: false
+    datasource:
+        url: jdbc:postgresql://localhost:5432/${JDBC_DATABASE_NAME}?user=${JDBC_DATABASE_USERNAME}&password=${JDBC_DATABASE_PASSWORD}
+    data:
+        rest:
+            base-path: /api
+    aop:
+        proxy-target-class : true
+    profiles:
+        active: prod
+    mail:
+        host: smtp.gmail.com
+        port: 465
+        username: ${SMTP_USER}
+        password: ${SMTP_PASSWORD}
+        properties:
+            mail:
+                smtp:
+                    auth: true
+                    ssl:
+                        enable: true
+                        trust: smtp.gmail.com
+                        starttls:
+                            enable: true
+    multipart:
+        maxFileSize: 300KB
+        maxRequestSize: 500KB
+server:
+    port: ${SERVER_PORT}
+logging:
+    path: ${LOG_PATH}

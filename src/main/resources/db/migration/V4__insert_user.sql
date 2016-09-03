@@ -1,0 +1,1 @@
+insert into users values('3e964492-f2e3-11e5-9ce9-5e5517507c66','USER','user','password','Mateusz','Szczesniak','Skiby 113, 26-060 Checiny','mszczesniak16@gmail.com',true,1);

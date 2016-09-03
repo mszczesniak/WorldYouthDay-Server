@@ -1,0 +1,12 @@
+spring:
+    profiles:
+        active: test
+    datasource:
+        platform: derby
+        url : jdbc:derby:memory:test-jpa;create=true
+        username :
+        password :
+        driverClassName : org.apache.derby.jdbc.EmbeddedDriver
+        initialize: true
+flyway:
+    enabled: false
